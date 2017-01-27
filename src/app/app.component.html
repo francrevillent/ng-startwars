@@ -1,3 +1,20 @@
 <h1>
   {{title}}
 </h1>
+<!--
+<pre>
+
+  {{ people | json}}
+</pre>
+-->
+
+<div class="container">
+  <div class="row center">
+
+    <person *ngFor="let _persona of people" [persona] = "_persona" ></person>
+
+  </div>
+
+</div>
+
+
